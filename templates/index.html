@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="container_title">Formulario Flask</h1>
+        <div class="container_form">
+            <form method="post" action="{{url_for('hello')}}" >
+                <div class="form_inputs">       
+                    <input class="inp_user" type="text" name="user" placeholder="Username"><br>
+                    <input class="inp_pass" type="password" name="pass" placeholder="Password"><br>
+                    <input class="submit_btn" type="submit" value="Send Data">
+                </div>
+            </form>
+        </div>  
+        <div>
+            <p class="fail_msg">{{message}}</p>
+        </div>
+    </div>
+</body>
+</html>
